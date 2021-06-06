@@ -17,7 +17,7 @@ INSTALLING EXPRESS FRAMEWORK
   
  
 STARTING NODE SERVER
-  - In the project folder, simply run <node Server.js> in Command Prompt or Terminal.
+  - In the project folder, simply run < node Server.js > in Command Prompt or Terminal.
   - ctrl + C to stop the server.
  
 SENDING HTTP REQUESTS (reference: https://docs.oracle.com/en/cloud/saas/marketing/eloqua-develop/Developers/GettingStarted/APIRequests/curl-formats.htm)
