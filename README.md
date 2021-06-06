@@ -25,7 +25,7 @@ SENDING HTTP REQUESTS (reference: https://docs.oracle.com/en/cloud/saas/marketin
   
   - To send request with new transaction to /add route, follow this syntax in Command Prompt / Terminal:
   
-    curl --header "Content-Type: application/json" --request POST --data "{\"payer\": \"DANNON\", \"points\": 1000, \"timestamp\": \"2020-11-02T14:00:00Z\" }" http://localhost:8000/add
+    curl --header "Content-Type: application/json" --request POST --data "{\\"payer\": \"DANNON\", \"points\": 1000, \"timestamp\": \"2020-11-02T14:00:00Z\" }" http://localhost:8000/add
   
   - To send request with spending points to /spend route, follow this syntax in Command Prompt / Terminal:
   
