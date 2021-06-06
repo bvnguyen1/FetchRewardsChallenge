@@ -24,12 +24,15 @@ SENDING HTTP REQUESTS (reference: https://docs.oracle.com/en/cloud/saas/marketin
   - Open another Command Prompt / Terminal to send HTTP request to the Node server.
   
   - To send request with new transaction to /add route, follow this syntax in Command Prompt / Terminal:
+  
     curl --header "Content-Type: application/json" --request POST --data "{\"payer\": \"DANNON\", \"points\": 1000, \"timestamp\": \"2020-11-02T14:00:00Z\" }" http://localhost:8000/add
   
   - To send request with spending points to /spend route, follow this syntax in Command Prompt / Terminal:
+  
     curl --header "Content-Type: application/json" --request POST --data "{\"points\": 5000}" http://localhost:8000/spend
   
   - To send request to /balance route, follow this syntax in Command Prompt / Terminal:
+  
     curl --request GET http://localhost:8000/balance
   
   - NOTE: remember to add '\' before " for --data String.
