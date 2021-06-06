@@ -39,6 +39,13 @@ SENDING HTTP REQUESTS (reference: https://docs.oracle.com/en/cloud/saas/marketin
           
   
 CHALLENGE RESULT:
+  1. curl --header "Content-Type: application/json" --request POST --data "{\\"payer\\": \\"DANNON\\", \\"points\": 300, \\"timestamp\\": \\"2020-10-31T10:00:00Z\\" }" http://localhost:8000/add
+  2. curl --header "Content-Type: application/json" --request POST --data "{\\"payer\\": \\"UNILEVER\\", \\"points\": 200, \\"timestamp\\": \\"2020-10-31T11:00:00Z\\" }" http://localhost:8000/add
+  3. curl --header "Content-Type: application/json" --request POST --data "{\\"payer\\": \\"DANNON\\", \\"points\\": -200, \\"timestamp\\": \\"2020-10-31T15:00:00Z\\" }" http://localhost:8000/add
+  4. curl --header "Content-Type: application/json" --request POST --data "{\\"payer\\": \\"MILLERS COORS\\", \\"points\\": 10000, \\"timestamp\\": \\"2020-11-01T14:00:00Z\\" }" http://localhost:8000/add
+  5. curl --header "Content-Type: application/json" --request POST --data "{\\"payer\\": \\"DANNON\\", \\"points\\": 1000, \\"timestamp\\": \\"2020-11-02T14:00:00Z\\" }" http://localhost:8000/add
+  6. curl --header "Content-Type: application/json" --request POST --data "{\\"points\\": 5000}" http://localhost:8000/spend
+  7. curl --request GET http://localhost:8000/balance
   
   ![Screenshot 2021-06-06 001313](https://user-images.githubusercontent.com/48262597/120916128-99873d00-c65c-11eb-8363-ebc3fb228bcf.png)
 
