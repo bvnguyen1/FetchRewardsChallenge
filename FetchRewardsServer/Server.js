@@ -71,7 +71,7 @@ function removeNegativePoints(transactionObj) {
             break;
         }
     }
-    console.log("THIS IS TEMPOSITION" + tempPosition);
+  
     for (let i = tempPosition - 1; i >= 0; i--) {
         if (timeStampData[i].payer == transactionObj.payer) {
             timeStampData[i].points = timeStampData[i].points + negativePoints
