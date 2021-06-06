@@ -21,7 +21,7 @@ STARTING NODE SERVER
   - ctrl + C to stop the server.
  
 SENDING HTTP REQUESTS (reference: https://docs.oracle.com/en/cloud/saas/marketing/eloqua-develop/Developers/GettingStarted/APIRequests/curl-formats.htm)
-  - Open another Command Promt / Terminal to send HTTP request to the Node server.
+  - Open another Command Prompt / Terminal to send HTTP request to the Node server.
   
   - To send request with new transaction to /add route, follow this syntax in Command Prompt / Terminal:
     curl --header "Content-Type: application/json" --request POST --data "{\"payer\": \"DANNON\", \"points\": 1000, \"timestamp\": \"2020-11-02T14:00:00Z\" }" http://localhost:8000/add
